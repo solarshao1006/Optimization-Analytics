@@ -1,0 +1,145 @@
+set VARS := ESTU ESTA EEXE BSTU BSTA BEXE HCSTU HCSTA HCEXE;
+set RESOURCES := LR AL PB PS PL1 PL2 PL3;
+set QUOTA_GROUP := ECONOMY BASIC HANDC STUDENT STANDARD EXECUTIVE;
+
+param profit_info :=
+	ESTU	20
+	ESTA	30
+	EEXE	40	
+	BSTU	50	
+	BSTA	80 
+	BEXE	125
+	HCSTU	100
+	HCSTA	250
+	HCEXE 	325;
+	
+param sept_order_info :=
+	ESTU	750
+	ESTA	1500
+	EEXE	100
+	BSTU	400	
+	BSTA	1500
+	BEXE	100
+	HCSTU	25
+	HCSTA	150
+	HCEXE 	50;
+	
+param aluminum_info :=
+	ESTU	14
+	ESTA	24
+	EEXE	30
+	BSTU	0	
+	BSTA	0 
+	BEXE	0
+	HCSTU	0
+	HCSTA	0
+	HCEXE 	0;
+	
+param particle_board_info :=
+	ESTU	8
+	ESTA	15
+	EEXE	24
+	BSTU	0
+	BSTA	0 
+	BEXE	0
+	HCSTU	0
+	HCSTA	0
+	HCEXE 	0;
+	
+param pine_sheet_info :=
+	ESTU	0
+	ESTA	0
+	EEXE	0
+	BSTU	22
+	BSTA	40 
+	BEXE	55
+	HCSTU	25
+	HCSTA	45
+	HCEXE 	60;
+	
+param line1 :=
+	ESTU	1.5
+	ESTA	2
+	EEXE	2.5
+	BSTU	0
+	BSTA	0 
+	BEXE	0
+	HCSTU	0
+	HCSTA	0
+	HCEXE 	0;
+
+param line2 :=
+	ESTU	1
+	ESTA	1
+	EEXE	1
+	BSTU	1
+	BSTA	1 
+	BEXE	1
+	HCSTU	0
+	HCSTA	0
+	HCEXE 	0;
+
+param line3 :=
+	ESTU	0
+	ESTA	0
+	EEXE	0
+	BSTU	3
+	BSTA	4 
+	BEXE	5
+	HCSTU	3
+	HCSTA	4
+	HCEXE 	5;
+
+param AF := 
+	ESTU	10
+	ESTA	11
+	EEXE	12
+	BSTU	15
+	BSTA	18
+	BEXE	20
+	HCSTU	20
+	HCSTA	25
+	HCEXE 	30;
+
+param HC :=
+	ESTU	0
+	ESTA	0
+	EEXE	0
+	BSTU	0
+	BSTA	0 
+	BEXE	0
+	HCSTU	50
+	HCSTA	60
+	HCEXE 	70;
+	
+param LR := 230400;
+param AL := 65000;
+param PB := 60000;
+param PS := 175000;
+param PL1 := 9600;
+param PL2 := 9600;
+param PL3 := 19200;
+
+param minimum_perc :
+			ECONOMY		BASIC		HANDC		STUDENT		STANDARD		EXECUTIVE :=
+	ESTU	0.8			-0.4		-0.1		0.8			-0.4			-0.05
+	ESTA	0.8			-0.4		-0.1		-0.2		0.6				-0.05
+	EEXE	0.8			-0.4		-0.1		-0.2		-0.4			0.95
+	BSTU	-0.2		0.6			-0.1		0.8			-0.4			-0.05
+	BSTA	-0.2		0.6			-0.1		-0.2		0.6				-0.05
+	BEXE	-0.2		0.6			-0.1		-0.2		-0.4			0.95
+	HCSTU	-0.2		-0.4		0.9			0.8			-0.4			-0.05
+	HCSTA	-0.2		-0.4		0.9			-0.2		0.6				-0.05
+	HCEXE 	-0.2		-0.4		0.9			-0.2		-0.4			0.95;
+
+param maximum_perc :
+			ECONOMY		BASIC		HANDC		STUDENT		STANDARD		EXECUTIVE :=
+	ESTU	0.5			-0.6		-0.2		0.65		-0.7			-0.15
+	ESTA	0.5			-0.6		-0.2		-0.35		0.3				-0.15
+	EEXE	0.5			-0.6		-0.2		-0.35		-0.7			0.85
+	BSTU	-0.5		0.4			-0.2		0.65		-0.7			-0.15
+	BSTA	-0.5		0.4			-0.2		-0.35		0.3				-0.15
+	BEXE	-0.5		0.4			-0.2		-0.35		-0.7			0.85
+	HCSTU	-0.5		-0.6		0.8			0.65		-0.7			-0.15
+	HCSTA	-0.5		-0.6		0.8			-0.35		0.3				-0.15
+	HCEXE 	-0.5		-0.6		0.8			-0.35		-0.7			0.85;

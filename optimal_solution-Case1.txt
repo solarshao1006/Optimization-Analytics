@@ -1,0 +1,12 @@
+:     _objname      _obj              _varname               _var      :=
+1   total_profit   612113   "production_amount['ESTU']"     750
+2         .           .     "production_amount['ESTA']"    1500
+3         .           .     "production_amount['EEXE']"     100
+4         .           .     "production_amount['BSTU']"     525.537
+5         .           .     "production_amount['BSTA']"    1657.5
+6         .           .     "production_amount['BEXE']"     825.403
+7         .           .     "production_amount['HCSTU']"     25
+8         .           .     "production_amount['HCSTA']"   1069.24
+9         .           .     "production_amount['HCEXE']"     50
+;
+

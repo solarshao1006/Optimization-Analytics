@@ -1,0 +1,62 @@
+:             _conname                _con        _con.slack       _con.up
+ :=
+1    aluminum_constraint             0          15500              1e+20
+2    particle_board_constraint       0          29100              1e+20
+3    pine_sheet_constrains           0.234495       0             195940
+4    line1_constraint                0           5225              1e+20
+5    line2_constraint                0           4241.56           1e+20
+6    line3_constraint                0           2264.39           1e+20
+7    total_labor_hour_constrain      2.59735       -2.91038e-11   239325
+8    "order_constraint['ESTU']"     -4.06234        0                892.185
+9    "order_constraint['ESTA']"    -12.0494         0               2145.83
+10   "order_constraint['EEXE']"    -38.3373         0                616.667
+11   "order_constraint['BSTU']"      0            125.537            525.537
+12   "order_constraint['BSTA']"      0            157.501           1657.5
+13   "order_constraint['BEXE']"      0            725.403            825.403
+14   "order_constraint['HCSTU']"   -88.3629         0                151.282
+15   "order_constraint['HCSTA']"     0            919.244           1069.24
+16   "order_constraint['HCEXE']"    -3.7655         0                778.394
+17   "quotas_min['ECONOMY']"         0           1049.46            1049.46
+18   "quotas_min['BASIC']"           0            407.367            407.367
+19   "quotas_min['HANDC']"           0            493.976            493.976
+20   "quotas_min['STUDENT']"       -12.7924        -2.84217e-14      281.915
+21   "quotas_min['STANDARD']"        0           1625.67            1625.67
+22   "quotas_min['EXECUTIVE']"       0            650.269            650.269
+23   "quotas_max['ECONOMY']"         0            901.343          1e+20
+24   "quotas_max['BASIC']"           0            893.17           1e+20
+25   "quotas_max['HANDC']"           0            156.293          1e+20
+26   "quotas_max['STUDENT']"         0            975.403          1e+20
+27   "quotas_max['STANDARD']"        0            325.134          1e+20
+28   "quotas_max['EXECUTIVE']"      31.0932         0                114.905
+;
+:  _con.current   _con.down     :=
+1       65000      49500
+2       60000      30900
+3      175000     169646
+4        9600       4375
+5        9600       5358.44
+6       19200      16935.6
+7      230400     200443
+8         750        438.767
+9        1500       1187.61
+10        100          0
+11        400     -1e+20
+12       1500     -1e+20
+13        100     -1e+20
+14         25          0
+15        150     -1e+20
+16         50          0
+17          0     -1e+20
+18          0     -1e+20
+19          0     -1e+20
+20          0       -114.494
+21          0     -1e+20
+22          0     -1e+20
+23          0       -901.343
+24          0       -893.17
+25          0       -156.293
+26          0       -975.403
+27          0       -325.134
+28          0       -331.807
+;
+

@@ -1,0 +1,25 @@
+# $5 = _var.current
+:             _varname               _var       _var.rc       _var.down    $5
+ :=
+1   "production_amount['ESTU']"     750        8.88178e-16   -1e+20         20
+2   "production_amount['ESTA']"    1500       -8.88178e-16   -1e+20         30
+3   "production_amount['EEXE']"     100        0             -1e+20         40
+4   "production_amount['BSTU']"     525.537   -2.66454e-15       45.3989    50
+5   "production_amount['BSTA']"    1657.5     -4.44089e-15       72.0293    80
+6   "production_amount['BEXE']"     825.403    1.42109e-14      121.219    125
+7   "production_amount['HCSTU']"     25       -2.66454e-15   -1e+20        100
+8   "production_amount['HCSTA']"   1069.24    -3.28626e-14      246.892    250
+9   "production_amount['HCEXE']"     50        0             -1e+20        325
+;
+:   _var.up     :=
+1    24.0623
+2    42.0494
+3    78.3373
+4    61.6671
+5    83.0628
+6   171.259
+7   188.363
+8   270.172
+9   328.766
+;
+
